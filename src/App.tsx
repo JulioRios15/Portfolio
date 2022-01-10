@@ -10,10 +10,10 @@ import Grid from '@mui/material/Grid';
 import Sidebar from 'components/sidebar/Sidebar';
 
 //Pages
-import AboutPage from 'pages/AboutPage';
-import PortfolioPage from 'pages/PortfolioPage';
-import ContactPage from 'pages/ContactPage';
-import ResumePage from 'pages/ResumePage';
+import AboutPage from 'pages/About/AboutPage';
+import PortfolioPage from 'pages/Portfolio/PortfolioPage';
+import ContactPage from 'pages/Contact/ContactPage';
+import ResumePage from 'pages/Resume/ResumePage';
 
 function App() {
   return (
