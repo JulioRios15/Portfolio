@@ -23,6 +23,9 @@ export const theme = createTheme({
     components: {
         MuiTypography: {
             styleOverrides: {
+                root: {
+                    textTransform: "none",
+                },
                 subtitle1: {
                     fontSize: "2rem"
                 },
@@ -35,6 +38,9 @@ export const theme = createTheme({
 
                 body2: {
                     fontSize: "1rem"
+                },
+                button: {
+                    fontSize: "1.1rem"
                 }
             }
         },
@@ -65,6 +71,25 @@ export const theme = createTheme({
             defaultProps: {
                 elevation: 6,
             }
-        }
+        },
+        MuiButton: {
+            styleOverrides: {
+                root: {
+                    textTransform: "none"
+                }
+            },
+            defaultProps: {
+                disableRipple: true
+            }
+            
+        },
+        MuiTextField: {
+            defaultProps: {
+                variant: "filled",
+                InputLabelProps:{
+                    shrink: true
+                }
+            }
+        },
     }
 });
