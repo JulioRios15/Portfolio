@@ -40,14 +40,9 @@ const StyledSidebar = styled(Paper)(({theme, color = "primary"}) => ({
     flexDirection: "column",
     justifyContent: "center",
     aligItems: "center",
-    width: "17rem",
-    height: "100vh",
+    width: "100%",
+    height: "100%",
     backgroundColor: theme.palette[color].main,
-
-    '@media screen and (max-width: 1050px)': {
-        width: "100vw",
-        height: "10vh",
-    }
 }))
 
 const StyledAvatarContainer = styled('div')(({theme, color = "primary"}) => ({
@@ -55,7 +50,7 @@ const StyledAvatarContainer = styled('div')(({theme, color = "primary"}) => ({
     margin: '1rem 0',
     justifyContent: 'center',
 
-    '@media screen and (max-width: 1050px)': {
+    '@media screen and (max-width: 900px)': {
         display: "none"
     }
 }))
@@ -70,9 +65,9 @@ const StyledAvatar = styled(Avatar)(({theme, color = "primary"}) => ({
         transform: "scale(1.05)",
       },
 
-    '@media screen and (max-width: 1050px)': {
-        width: "2rem",
-        height: "2rem",
+    '@media screen and (max-width: 900px)': {
+        width: "1.5rem",
+        height: "1.5rem",
         border: `.2rem solid ${theme.palette[color].light}`,
     }
 }))
@@ -81,7 +76,7 @@ const StyledTabsContainer = styled('div')(({theme, color = 'text'}) => ({
     display: 'flex',
     margin: "0 auto",
 
-    '@media screen and (max-width: 1050px)': {
+    '@media screen and (max-width: 900px)': {
         display: "none"
     }
 }));
@@ -89,9 +84,10 @@ const StyledTabsContainer = styled('div')(({theme, color = 'text'}) => ({
 const StyledMenuContainer = styled('div')(({theme, color = 'text'}) => ({
     display: "none",
     justifyContent: "space-between",
+    alignItems: 'center',
     padding: "0 1rem",
 
-    '@media screen and (max-width: 1050px)': {
+    '@media screen and (max-width: 900px)': {
         display: "flex"
     }
 }));

@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //MUI
 import styled from '@mui/system/styled';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import Grid from '@mui/material/Grid';
 
 //Components
@@ -17,30 +18,43 @@ import ResumePage from 'pages/Resume/ResumePage';
 
 function App() {
   return (
-    <StyledApp>
+    <StyledAppGrid container>
       <BrowserRouter>
-        <Grid container>
-          <Grid item>
-            <Sidebar/>
-          </Grid>
 
-          <Grid item>         
-              <Routes>
-                <Route path="/" element={<AboutPage/>}/>
-                <Route path="/about-me" element={<AboutPage/>}/>
-                <Route path="/portfolio" element={<PortfolioPage/>}/>
-                <Route path="/contact" element={<ContactPage/>}/>
-                <Route path="/resume" element={<ResumePage/>}/>
-              </Routes>
-          </Grid>
-        </Grid>
+        <StyledSidebarGridContiner item xs={12} md={2} maxWidth={25}>
+          <Sidebar/>
+        </StyledSidebarGridContiner>
+
+        <StyledContentGridContiner item xs={12} md={10}>
+          <Routes>
+            <Route path="/" element={<AboutPage/>}/>
+            <Route path="/about-me" element={<AboutPage/>}/>
+            <Route path="/portfolio" element={<PortfolioPage/>}/>
+            <Route path="/contact" element={<ContactPage/>}/>
+            <Route path="/resume" element={<ResumePage/>}/>
+          </Routes>
+        </StyledContentGridContiner>
+
       </BrowserRouter>
-    </StyledApp>
+    </StyledAppGrid>
   );
 }
 
-const StyledApp = styled("div")({
+const StyledAppGrid = styled(Grid)(({theme}) => ({
 
-})
+}))
+
+const StyledSidebarGridContiner = styled(Grid)(({theme}) => ({
+  height: "100vh",
+
+  '@media screen and (max-width: 900px)': {
+    position: "sticky",
+    top: "0",
+    height: "auto"
+  }
+}))
+
+const StyledContentGridContiner = styled(Grid)(({theme}) => ({
+}))
 
 export default App;
