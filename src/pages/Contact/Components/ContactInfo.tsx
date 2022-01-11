@@ -4,25 +4,30 @@ import React from 'react';
 import styled from '@mui/system/styled';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
+import Divider from '@mui/material/Divider';
+
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
+import PinDropIcon from '@mui/icons-material/PinDrop';
 
 export default function ContactInfo() {
     return (
         <StyledStack direction="column" spacing={1}>
             <StyledStackItemContainer>
-                <StyledStackItemTitle variant='h6' color="primary.main">EMAIL</StyledStackItemTitle>
+                <StyledStackItemTitle variant='h6' color="primary.main"> <EmailIcon/> EMAIL</StyledStackItemTitle>
                 <Typography component="a" href='mailto:rios.julio.david@outlook.com' color="text.secondary">rios.julio.david@outlook.com</Typography>
             </StyledStackItemContainer>
-
+            <Divider/>
             <StyledStackItemContainer>
-                <StyledStackItemTitle variant='h6' color="primary.main">PHONE</StyledStackItemTitle>
-                <Typography color="text.secondary">(787)-452-8491</Typography>
+                <StyledStackItemTitle variant='h6' color="primary.main"> <PhoneIphoneIcon/> PHONE</StyledStackItemTitle>
+                <Typography component="a" href="tel:787-452-8491" color="text.secondary">(787)-452-8491</Typography>
             </StyledStackItemContainer>
-
+            <Divider/>
             <StyledStackItemContainer>
-                <StyledStackItemTitle variant='h6' color="primary.main">LOCATION</StyledStackItemTitle>
+                <StyledStackItemTitle variant='h6' color="primary.main"> <PinDropIcon/> LOCATION</StyledStackItemTitle>
                 <Typography color="text.secondary">Isabela, Puerto Rico</Typography>
             </StyledStackItemContainer>
+            <Divider/>
         </StyledStack>
     )
 }
@@ -36,5 +41,8 @@ const StyledStackItemContainer = styled('div')({
 })
 
 const StyledStackItemTitle = styled(Typography)({
+    display: "flex",
+    justifyContent: "start",
+    alignItems: "center",
 })
 
