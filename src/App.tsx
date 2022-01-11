@@ -21,7 +21,7 @@ function App() {
     <StyledAppGrid container>
       <BrowserRouter>
 
-        <StyledSidebarGridContiner item xs={12} md={2} maxWidth={25}>
+        <StyledSidebarGridContiner item xs={12} md={2}>
           <Sidebar/>
         </StyledSidebarGridContiner>
 
