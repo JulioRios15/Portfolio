@@ -14,18 +14,18 @@ export default function ContactInfo() {
     return (
         <StyledStack direction="column" spacing={1}>
             <StyledStackItemContainer>
-                <StyledStackItemTitle variant='h6' color="primary.main"> <EmailIcon/> EMAIL</StyledStackItemTitle>
-                <Typography component="a" href='mailto:rios.julio.david@outlook.com' color="text.secondary">rios.julio.david@outlook.com</Typography>
+                <StyledStackItemTitle variant='body1' color="primary.main"> <EmailIcon/> EMAIL</StyledStackItemTitle>
+                <Typography variant='body2' component="a" href='mailto:rios.julio.david@outlook.com' color="text.secondary">rios.julio.david@outlook.com</Typography>
             </StyledStackItemContainer>
             <Divider/>
             <StyledStackItemContainer>
-                <StyledStackItemTitle variant='h6' color="primary.main"> <PhoneIphoneIcon/> PHONE</StyledStackItemTitle>
-                <Typography component="a" href="tel:787-452-8491" color="text.secondary">(787)-452-8491</Typography>
+                <StyledStackItemTitle variant='body1' color="primary.main"> <PhoneIphoneIcon/> PHONE</StyledStackItemTitle>
+                <Typography variant='body2' component="a" href="tel:787-452-8491" color="text.secondary">(787)-452-8491</Typography>
             </StyledStackItemContainer>
             <Divider/>
             <StyledStackItemContainer>
-                <StyledStackItemTitle variant='h6' color="primary.main"> <PinDropIcon/> LOCATION</StyledStackItemTitle>
-                <Typography color="text.secondary">Isabela, Puerto Rico</Typography>
+                <StyledStackItemTitle variant='body1' color="primary.main"> <PinDropIcon/> LOCATION</StyledStackItemTitle>
+                <Typography variant='body2' color="text.secondary">Isabela, Puerto Rico</Typography>
             </StyledStackItemContainer>
             <Divider/>
         </StyledStack>

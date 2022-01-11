@@ -18,7 +18,7 @@ export const theme = createTheme({
         }
     },
     typography: {
-        fontFamily: "Popins"
+        fontFamily: "sans-serif"
     },
     components: {
         MuiTypography: {
@@ -26,14 +26,29 @@ export const theme = createTheme({
                 root: {
                     textTransform: "none",
                 },
+                h1:{
+                    fontSize: "3.5rem",
+                    fontWeight: "600",
+                },
+                h2:{
+                    fontSize: "3rem",
+                    fontWeight: "600",
+                },
+                h3:{
+                    fontSize: "2.5rem",
+                    fontWeight: "600",
+                },
                 subtitle1: {
-                    fontSize: "2rem"
+                    fontSize: "1.5rem",
+                    fontWeight: "200"
+                    
                 },
                 subtitle2: {
-                    fontSize: "1.5rem"
+                    fontSize: "1.3rem",
+                    fontWeight: "200"
                 },
                 body1: {
-                    fontSize: "1.2rem"
+                    fontSize: "1.1rem",
                 },
 
                 body2: {
