@@ -38,7 +38,7 @@ export default function SidebarTabs(props: SidebarTabsProps){
 }
 
 const StlyedLinkTab = styled(LinkTab)(({theme, color = 'text'}) => ({
-    color: theme.palette[color].primary,
+    color: theme.palette[color].secondary,
     transition: "all .2s ease-in-out",
     ":hover": {
         transform: "scale(1.2)",

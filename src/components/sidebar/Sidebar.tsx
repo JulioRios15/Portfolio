@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 
 // MUI
@@ -13,6 +13,23 @@ import SidebarMenu from './SidebarMenu';
 
 export default function Sidebar(){
     const [value, setValue] = useState(0);
+
+    useEffect(() => {
+        
+        if(window.location.pathname === '/' || window.location.pathname === '/about-me'){
+            setValue(0)
+        }
+        if(window.location.pathname === '/portfolio'){
+            setValue(1)
+        }
+        if(window.location.pathname === '/contact'){
+            setValue(2)
+        }
+        if(window.location.pathname === '/resume'){
+            setValue(3)
+        }
+        
+    }, [])
 
     return(
         <StyledSidebar color='primary' elevation={6}>

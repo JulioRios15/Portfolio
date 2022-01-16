@@ -88,5 +88,5 @@ const StlyedTabs = styled(Tabs)(({theme, color = 'primary'}) => ({
     backgroundColor: theme.palette[color].main
 }))
 const StlyedLinkTab = styled(LinkTab)(({theme, color = 'text'}) => ({
-    color: theme.palette[color].primary
+    color: theme.palette[color].secondary
 }))
