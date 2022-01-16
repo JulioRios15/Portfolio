@@ -1,18 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 //MUI
 import { ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 import { theme } from 'components/core/theme';
-import GlobalStyles from '@mui/material/GlobalStyles';
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-    <GlobalStyles styles={{body: {backgroundColor: theme.palette.background.default}}}/>
+    <CssBaseline/>
         <App />
     </ThemeProvider> 
   </React.StrictMode>,

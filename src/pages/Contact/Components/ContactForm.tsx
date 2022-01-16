@@ -5,7 +5,6 @@ import { object, string } from 'yup';
 
 //MUI
 import styled from '@mui/system/styled';
-import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';

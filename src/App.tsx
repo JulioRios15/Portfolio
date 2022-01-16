@@ -1,10 +1,8 @@
 import React from 'react';
-import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //MUI
 import styled from '@mui/system/styled';
-import useMediaQuery from '@mui/material/useMediaQuery';
 import Grid from '@mui/material/Grid';
 
 //Components
@@ -50,11 +48,20 @@ const StyledSidebarGridContiner = styled(Grid)(({theme}) => ({
   '@media screen and (max-width: 900px)': {
     position: "sticky",
     top: "0",
-    height: "auto"
+    height: "5vh"
   }
 }))
 
 const StyledContentGridContiner = styled(Grid)(({theme}) => ({
+  height: "100vh",
+  overflow: 'scroll',
+  overflowY: "auto",
+  overflowX: "auto",
+
+  '@media screen and (max-width: 900px)': {
+    height: "auto"
+  }
+
 }))
 
 export default App;

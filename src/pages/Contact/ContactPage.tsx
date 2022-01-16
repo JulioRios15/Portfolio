@@ -10,6 +10,7 @@ import Typography from '@mui/material/Typography';
 import ContactForm from 'pages/Contact/components/ContactForm';
 import ContactInfo from 'pages/Contact/components/ContactInfo';
 import ContactMap from 'pages/Contact/components/ContactMap';
+import Footer from 'components/footer/Footer';
 
 export default function ContactPage() {
 
@@ -32,8 +33,12 @@ export default function ContactPage() {
                     <ContactInfo/>
                 </StyledItemWrapper>
 
-                <StyledItemWrapper item xs={12} md={12} >
+                <StyledItemWrapper item xs={12} >
                     <ContactMap/>
+                </StyledItemWrapper>
+
+                <StyledItemWrapper item xs={12}>
+                    <Footer/>
                 </StyledItemWrapper>
             </Grid>
         </StyledContainer>   
@@ -46,9 +51,8 @@ const StyledContainer = styled(Container)(({theme, color = 'primary'}) => ({
     justifyContent: "center",
     alignItems: "center",
     margin: "auto 0",
-    height: "100vh",
+    height: "100%",
     width: "100%",
-    overflow: "scroll",
 
     '@media screen and (max-width: 900px)': {
         height: "auto"
