@@ -13,12 +13,12 @@ export const theme = createTheme({
             main: "#FF5C58"
         },
         text: {
-            primary: "#ececec",
-            secondary: "#2f2f2f"
-        }
+            primary: "#000000",
+            secondary: "#FAEEE7"
+        },
     },
     typography: {
-        fontFamily: "sans-serif"
+        fontFamily: "Poppins sans-serif"
     },
     components: {
         MuiTypography: {
@@ -28,24 +28,19 @@ export const theme = createTheme({
                 },
                 h1:{
                     fontSize: "3.5rem",
-                    fontWeight: "600",
                 },
                 h2:{
                     fontSize: "3rem",
-                    fontWeight: "600",
                 },
                 h3:{
                     fontSize: "2.5rem",
-                    fontWeight: "600",
                 },
                 subtitle1: {
                     fontSize: "1.5rem",
-                    fontWeight: "200"
                     
                 },
                 subtitle2: {
                     fontSize: "1.3rem",
-                    fontWeight: "200"
                 },
                 body1: {
                     fontSize: "1.1rem",
@@ -106,5 +101,12 @@ export const theme = createTheme({
                 }
             }
         },
+        MuiInputLabel: {
+            styleOverrides: {
+                root: {
+                    color: "black",
+                }
+            }
+        }
     }
 });
