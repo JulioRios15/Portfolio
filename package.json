@@ -2,6 +2,9 @@
   "homepage": "https://JulioRios15.github.io/Portfolio",
   "name": "portfolio",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.16.0"
+  },
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.7.1",
