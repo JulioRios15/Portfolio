@@ -21,6 +21,12 @@ import PortfolioItem from 'pages/Portfolio/components/PortfolioItem';
 
 const listData = [
     {
+        backgroundImgSrc: "https://user-images.githubusercontent.com/88795800/152446519-12d46a7f-c9b5-4a68-8747-3c92014258ac.png",
+        title: "Cultural Eats",
+        type: "Full Stack",
+        githubLink: "https://github.com/JulioRios15/Cultural-Eats"
+    },
+    {
         backgroundImgSrc: Shreddit,
         title: "Shreddit",
         type: "Full Stack",
