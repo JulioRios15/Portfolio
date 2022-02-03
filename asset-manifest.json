@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "/Portfolio/static/js/main.37fdead5.js",
+    "main.js": "/Portfolio/static/js/main.8c0fb628.js",
     "static/js/787.9b9c0edf.chunk.js": "/Portfolio/static/js/787.9b9c0edf.chunk.js",
     "static/media/shreddit-overview.png": "/Portfolio/static/media/shreddit-overview.4e2d1a0abf908fbaa07b.png",
     "static/media/command-line.jpg": "/Portfolio/static/media/command-line.264b76d4ccd0958f2a7d.jpg",
     "static/media/apis-for-ipas-overview-2.jpg": "/Portfolio/static/media/apis-for-ipas-overview-2.272a60e675206522cc14.jpg",
     "static/media/postman.jpg": "/Portfolio/static/media/postman.a2a501f9b49d360b5341.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.37fdead5.js.map": "/Portfolio/static/js/main.37fdead5.js.map",
+    "main.8c0fb628.js.map": "/Portfolio/static/js/main.8c0fb628.js.map",
     "787.9b9c0edf.chunk.js.map": "/Portfolio/static/js/787.9b9c0edf.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.37fdead5.js"
+    "static/js/main.8c0fb628.js"
   ]
 }
